@@ -26,14 +26,6 @@ class BootstrapFormHelper extends \Croogo\Core\View\Helper\CroogoFormHelper {
 
     use BootstrapTrait ;
 
-    public $helpers = [
-        'Html', 
-        'Url',
-        'bHtml' => [
-            'className' => 'Bootstrap.BootstrapHtml'
-        ]
-    ] ;
-
     /**
      * Default config for the helper.
      *
@@ -134,7 +126,18 @@ class BootstrapFormHelper extends \Croogo\Core\View\Helper\CroogoFormHelper {
     private $buttonTypes = ['default', 'primary', 'info', 'success', 'warning', 'danger', 'link'] ;
     private $buttonSizes = ['xs', 'sm', 'lg'] ;
 
-    public function __construct (\Croogo\Core\View\CroogoView $view, array $config = []) {
+    public function __construct ($view, array $config = []) {
+        /**
+         * @customization moved from $this->helpers as class attribute down here for a merge
+         */
+        $this->helpers = array_merge($this->helpers, [
+            'Html',
+            'Url',
+            'bHtml' => [
+                'className' => 'Bootstrap.BootstrapHtml'
+            ]
+        ]);
+
         if (isset($config['buttons'])) {
             if (isset($config['buttons']['type'])) {
                 $this->_defaultButtonType = $config['buttons']['type'] ;
