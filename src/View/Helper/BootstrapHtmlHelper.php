@@ -22,9 +22,7 @@
 
 namespace Bootstrap\View\Helper;
 
-use Croogo\Core\View\Helper;
-
-class BootstrapHtmlHelper extends CroogoHtmlHelper {
+class BootstrapHtmlHelper extends \Croogo\Core\View\Helper\CroogoHtmlHelper {
 
     use BootstrapTrait ;
 

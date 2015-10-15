@@ -22,9 +22,7 @@
 
 namespace Bootstrap\View\Helper;
 
-use Croogo\Core\View\Helper;
-
-class BootstrapPaginatorHelper extends CroogoPaginatorHelper {
+class BootstrapPaginatorHelper extends \Croogo\Core\View\Helper\CroogoPaginatorHelper {
 
     use BootstrapTrait ;
 

@@ -22,9 +22,7 @@
 
 namespace Bootstrap\View\Helper;
 
-use Croogo\Core\View\Helper\CroogoFormHelper;
-
-class BootstrapFormHelper extends CroogoFormHelper {
+class BootstrapFormHelper extends \Croogo\Core\View\Helper\CroogoFormHelper {
 
     use BootstrapTrait ;
 
