@@ -22,9 +22,9 @@
 
 namespace Bootstrap\View\Helper;
 
-use Cake\View\Helper\FormHelper;
+use Croogo\Core\View\Helper\CroogoFormHelper;
 
-class BootstrapFormHelper extends FormHelper {
+class BootstrapFormHelper extends CroogoFormHelper {
 
     use BootstrapTrait ;
 
@@ -136,7 +136,7 @@ class BootstrapFormHelper extends FormHelper {
     private $buttonTypes = ['default', 'primary', 'info', 'success', 'warning', 'danger', 'link'] ;
     private $buttonSizes = ['xs', 'sm', 'lg'] ;
 
-    public function __construct (\Cake\View\View $view, array $config = []) {
+    public function __construct (\Croogo\Core\View\CroogoView $view, array $config = []) {
         if (isset($config['buttons'])) {
             if (isset($config['buttons']['type'])) {
                 $this->_defaultButtonType = $config['buttons']['type'] ;

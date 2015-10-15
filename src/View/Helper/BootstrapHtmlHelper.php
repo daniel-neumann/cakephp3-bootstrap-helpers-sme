@@ -22,9 +22,9 @@
 
 namespace Bootstrap\View\Helper;
 
-use Cake\View\Helper\HtmlHelper;
+use Croogo\Core\View\Helper;
 
-class BootstrapHtmlHelper extends HtmlHelper {
+class BootstrapHtmlHelper extends CroogoHtmlHelper {
 
     use BootstrapTrait ;
 

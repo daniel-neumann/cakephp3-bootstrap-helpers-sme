@@ -22,9 +22,9 @@
 
 namespace Bootstrap\View\Helper;
 
-use Cake\View\Helper\PaginatorHelper;
+use Croogo\Core\View\Helper;
 
-class BootstrapPaginatorHelper extends PaginatorHelper {
+class BootstrapPaginatorHelper extends CroogoPaginatorHelper {
 
     use BootstrapTrait ;
 
