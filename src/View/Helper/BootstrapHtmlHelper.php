@@ -31,7 +31,7 @@ class BootstrapHtmlHelper extends \Croogo\Core\View\Helper\CroogoHtmlHelper {
      *
      * @var boolean
      */
-    protected $_useFontAwesome = TRUE;
+    protected $_useFontAwesome = FALSE;
 
     public function __construct (\Cake\View\View $view, array $config = []) {
         if (isset($config['useFontAwesome'])) {
@@ -47,9 +47,11 @@ class BootstrapHtmlHelper extends \Croogo\Core\View\Helper\CroogoHtmlHelper {
      * @param $icon Name of the icon.
      *
     **/
+    /*
     public function icon ($icon, $options = array()) {
         return $this->_useFontAwesome ? $this->faIcon($icon, $options) : $this->glIcon($icon, $options);
     }
+    */
 
     /**
      * Create a font awesome icon.
