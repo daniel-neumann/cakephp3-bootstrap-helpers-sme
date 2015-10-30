@@ -31,7 +31,7 @@ class BootstrapHtmlHelper extends \Croogo\Core\View\Helper\CroogoHtmlHelper {
      *
      * @var boolean
      */
-    protected $_useFontAwesome = FALSE;
+    protected $_useFontAwesome = TRUE;
 
     public function __construct (\Cake\View\View $view, array $config = []) {
         if (isset($config['useFontAwesome'])) {
